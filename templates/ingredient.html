@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1 class="mb-4">Search Ingredients</h1>
+            <a class="mb-4" href="/users">back</a>
+            <input type="Text" class="form-control" id="ingredientSearch" placeholder="Enter Ingredient Name Here">
+        </div>
+        <p class="results pt-4"></p>
+        
+        <div class="row mt-4" id="ingredient-container">
+        </div>
+    </div>
+</div>
+{% endblock %}
+

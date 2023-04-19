@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row text-center user-recipes">
+        <div class="col-12">
+            <h5>Your Recipes</h5>
+            <p class="results3 pt-4"></p>
+        </div>
+        <div class="col-12">
+            <a href="/users" class="">Back</a>
+        </div>
+        <div class="row recipe-container">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="/static/recipe.js"></script>
+{% endblock %}
+

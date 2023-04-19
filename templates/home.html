@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-12 main-header">
+            <h1>Welcome {{ g.user.username }}</h1>
+        </div>
+    </div>
+    <div class="row text-center ingredients">
+        <!-- <div class="col-lg-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Your Grocery Lists</p>
+                </div>
+                <div class="col-lg-12">
+                    <p>Browse Recipes</p>
+                </div>
+            </div>
+        </div> -->
+        <div class="col-lg-7">
+            <h5>Your Ingredients</h5> 
+            <p class="results pt-4"></p>
+            <div class="row" id="ingredient-container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-3">
+                        <a href="/ingredients" class="btn btn-primary btn-sm">Add Ingredients</a>
+                    </div>
+                </div>
+                {% if not g.user.saved_ingredients %}
+                <p class="mt-4">You have no ingredients saved</p>
+                {% endif %}
+
+                
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <h5 class="">Your pot</h5>
+            <label for="recipeType">Type of recipe</label>
+            <input type="text" class="form-control" id="recipeType" placeholder="eg. Pasta">
+            <a href="#" class="btn btn-sm btn-primary find-recipe">Find Recipe</a>
+            <p class="results2 pt-4"></p>
+            
+            <div class="row d-flex justify-content-center" id="pot-container">
+                
+            </div>
+        </div>
+    </div>
+    <div class="row text-center recipes">
+        <div class="col-12">
+            <h5>Recipe Results</h5>
+            <p class="results3 pt-4"></p>
+        </div>
+        <div class="col-12">
+            <a href="#" class="ingredient-back-btn">Back</a>
+        </div>
+        <div class="row recipe-container">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="/static/home.js"></script>
+{% endblock %}
