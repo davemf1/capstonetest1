@@ -1,0 +1,122 @@
+body{
+    font-family: Archivo Narrow;
+}
+.main-nav{
+    list-style: none;
+}
+
+.main-nav a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.main-nav a:last-child{
+    margin-right: 30px;
+}
+
+
+.nav-bar{
+    padding: 25px;
+    margin-bottom: 4rem;
+    background-color: #dde7cc;
+    border-bottom: 2px solid lightgray;
+}
+
+.main-header{
+    margin-bottom: 3rem;
+}
+
+.ingredient-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    width: 75%;
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+.ingredient-card img{
+    border-radius: 50%;
+    width: 50%;
+}
+
+.ingredient-card h6{
+    margin-top:.5rem;
+}
+
+.recipe-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    width: 75%;
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+.recipe-card img{
+    border-radius: 15%;
+    width: 50%;
+}
+
+.recipe-card h6{
+    margin-top:.5rem;
+}
+
+.fa-add:before, .fa-plus:before {
+    color: black;
+    cursor: pointer;
+}
+
+.fa-add:before, .fa-minus:before {
+    color: black;
+    cursor: pointer;
+}
+
+.fa-cutlery:before, .fa-utensils:before{
+    color: black;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    font-size: 14px;
+    background-color: #e7e3cc;
+    color: #000000;
+    border: none;
+}
+
+.btn-secondary:hover{
+    background-color: #a19376;
+}
+
+.modal1{
+    display: none;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    width: 50%; 
+    height: 75%; 
+    overflow: auto; 
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.modal1-img img{
+    width: 25%;
+    border-radius: 15%;
+}
+
+.modal1-title h6{
+    border-bottom: 1px solid black;
+}
+
+.modal1-ingredients h6{
+    border-bottom: 1px solid black;
+}
+
+.modal1-instructions h6{
+    border-bottom: 1px solid black;
+}
+
+
+
